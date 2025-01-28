@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Snipcart CDN -->
+  <script src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
+</head>
+<body>
+  <header>
+    <h1>My Store</h1>
+  </header>
+
+  <!-- Product Grid -->
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product">
+      <h2>Blue T-Shirt</h2>
+      <p>Comfortable cotton t-shirt</p>
+      <p><strong>$15.00</strong></p>
+      <button class="snipcart-add-item"
+        data-item-id="1"
+        data-item-name="Blue T-Shirt"
+        data-item-price="15.00"
+        data-item-url="/">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <h2>Coffee Mug</h2>
+      <p>Ceramic 12oz mug</p>
+      <p><strong>$8.00</strong></p>
+      <button class="snipcart-add-item"
+        data-item-id="2"
+        data-item-name="Coffee Mug"
+        data-item-price="8.00"
+        data-item-url="/">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <h2>Notebook</h2>
+      <p>Hardcover lined notebook</p>
+      <p><strong>$12.00</strong></p>
+      <button class="snipcart-add-item"
+        data-item-id="3"
+        data-item-name="Notebook"
+        data-item-price="12.00"
+        data-item-url="/">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- Snipcart Cart UI -->
+  <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY"></div>
+</body>
+</html>
